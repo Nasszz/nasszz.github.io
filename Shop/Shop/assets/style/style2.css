@@ -1,0 +1,86 @@
+#slider-wrap {
+    bottom: 20;
+    top: 20;
+
+}
+#home-film h1{
+    font-size: 40px;
+
+}
+#home-film .films{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.block-film{
+    margin: 0 10px 20px;
+    width: calc(16.66% - 20px);
+
+}
+.block-film .img{
+    margin-bottom: 5px;
+    position: relative;
+}
+.block-film .img:before{
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+.block-film .img:hover:before{
+    display: block;
+}
+.block-film .img a{
+    text-decoration: none;
+    color:#fff;
+    font-size:12px; 
+}
+.block-film .img img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+}
+.block-film .img .view{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.block-film .img:hover .view{
+    display: flex;
+}
+.block-film .img .view i{
+    font-size: 30px;
+}
+
+.block-film .title {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+}
+.block-film .title:hover{
+    color: red;
+
+}
+.block-film .info{
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 3px;
+}

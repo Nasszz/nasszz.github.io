@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: stretch;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#question {
+    border: 2px solid yellow;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#answers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#answers a {
+    border: 2px solid #FFF;
+    box-sizing: border-box;
+    color: #FFF;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: calc(50% - 20px);
+}
+
+#answers a:hover {
+    background: yellow;
+    color: #000;
+}
+ #answers a.checking{
+     background: orange;
+ }
+ #answers a.excellent{
+    background: green;
+}
+#answers a.lose{
+    background: red;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    width: 200px;
+}
+
+.right div {
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.right div.current {
+    background: orange;
+}
+
+.right div.skip {
+    color: greenyellow;
+    font-weight: bold;
+}
